@@ -6,14 +6,14 @@ function App() {
   const [activeArtifact, setActiveArtifact] = useState(null);
 
   const playRandomSound = () => {
-    const sounds = ["/Odin_1.mp3", "/Odin_2.mp3", "/Odin_3.mp3"];
+    const sounds = ["Odin_1.mp3", "Odin_2.mp3", "Odin_3.mp3"];
     const randomIndex = Math.floor(Math.random() * sounds.length);
     const audio = new Audio(sounds[randomIndex]);
     audio.play();
   };
 
   const strikeForge = (index) => {
-    const audio = new Audio("/Hammer.mp3");
+    const audio = new Audio("Hammer.mp3");
     audio.play();
     setActiveArtifact(index);
     setTimeout(() => {
@@ -32,7 +32,7 @@ function App() {
     <div className="nordic-container">
       <div
         className="background-overlay"
-        style={{ backgroundImage: "url('/Background.png')" }}
+        style={{ backgroundImage: "url('Background.png')" }}
       ></div>
 
       <section id="center">
