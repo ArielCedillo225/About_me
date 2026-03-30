@@ -1,36 +1,37 @@
-# ᛟ The Nordic Forge | Developer Portfolio
+# Ariel Cedillo | Developer Portfolio
 
-Welcome to my personal forge. This is where I craft digital solutions with the strength of steel and the precision of ancient runes.
+Personal portfolio of a Full Stack Developer and IT Specialist based in Cuenca, Ecuador. This repository contains the source code for a minimalist and responsive web portfolio built with React.
 
-## ⚔️ The Warrior
+## Profile
 
-**Name:** Ariel Cedillo (aka Fluki)
-**Role:** Software Engineer & IT Specialist
-**Location:** Cuenca, Ecuador
+- **Name:** Ariel Cedillo
+- **Role:** Full Stack Developer & IT Specialist
+- **Location:** Cuenca, Ecuador
 
-## ⚒️ Artifacts (Projects)
+## Projects
 
-- **GAD Cuenca:** Municipal management systems.
-- **GMOV:** Mobility and transport solutions.
-- **ICP:** Industrial control platforms.
-- **FabLab Cuenca:** Innovation and digital fabrication.
+- **ICP:** Coffee production traceability system.
+- **GAD Cuenca:** Web systems development and maintenance.
+- **GMOV:** Operational management systems.
+- **FabLab:** Services platform and network management.
+- **InkBetween:** Personal application to track reading progress.
 
-## ᚱ Ancient Runes (Stack)
+## Technical Skills & Proficiency
 
-- **Frontend:** React, Vite, CSS (Nord Theme).
-- **Backend:** Node.js, TypeScript.
-- **Real-time:** UDP, WebSockets.
+- **Languages & Core Development:** TypeScript/JavaScript, Dart, Node.js, Flutter
+- **Frontend Frameworks:** React, Angular, Astro
+- **Database Management:** SQL (Relational), NoSQL (Document-based)
+- **DevOps & Infrastructure:** Docker, Nginx, Reverse Proxies
+- **Cloud & Deployment:** Firebase, Vercel
+- **Real-time & Version Control:** WebSockets, Git, GitHub, CI/CD
 
-## 🔊 Interactive Features
+## Features
 
-- **Praises to Odin:** A counter that triggers random Viking chants.
-- **The Forge:** Hover over artifacts to strike them with a hammer, heating the metal to a glowing red before it cools back to the depths of the code.
+- Minimalist dark mode user interface with orange accents.
+- Custom interactive project carousel with scale transitions.
+- Responsive layout adapted for mobile and desktop screens.
 
-## 🚀 Deployment
+## Deployment
 
-Forged and deployed on GitHub Pages.
+Deployed on GitHub Pages.
 [View Live Site](https://arielcedillo225.github.io/About_me/)
-
----
-
-_Skål! Built with passion and cold Ecuadorian mountain air._

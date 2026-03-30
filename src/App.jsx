@@ -1,121 +1,65 @@
-import { useState } from "react";
 import "./App.css";
+import Carousel from "./components/Carousel";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [activeArtifact, setActiveArtifact] = useState(null);
-
-  const playRandomSound = () => {
-    const sounds = ["Odin_1.mp3", "Odin_2.mp3", "Odin_3.mp3"];
-    const randomIndex = Math.floor(Math.random() * sounds.length);
-    const audio = new Audio(sounds[randomIndex]);
-    audio.play();
-  };
-
-  const strikeForge = (index) => {
-    const audio = new Audio("Hammer.mp3");
-    audio.play();
-    setActiveArtifact(index);
-    setTimeout(() => {
-      setActiveArtifact(null);
-    }, 100);
-  };
-
-  const handleCounterClick = () => {
-    setCount((c) => c + 1);
-    playRandomSound();
-  };
-
-  const artifacts = ["GAD Cuenca", "GMOV", "ICP", "FabLab"];
-
   return (
-    <div className="nordic-container">
-      <div
-        className="background-overlay"
-        style={{ backgroundImage: "url('Background.png')" }}
-      ></div>
+    <div className="portfolio-container">
+      <header className="header-section">
+        <h1>Ariel Cedillo</h1>
+        <p className="subtitle">Full Stack Developer & IT Specialist</p>
+      </header>
 
-      <section id="center">
-        <div className="hero-text">
-          <h1>Skål!</h1>
-          <p>
-            From the depths of Hel to the even deeper depths of GitHub,{" "}
-            <strong> Fluki </strong> rises{" "}
-            <span
-              style={{
-                fontSize: "10px",
-                verticalAlign: "middle",
-                opacity: 0.7,
-              }}
-            >
-              (aka Ariel Cedillo)
-            </span>
-          </p>
-          <div className="runic-status">
-            <code>const path = "Valhalla";</code>
+      <Carousel />
+
+      <section className="stack-section">
+        <h2>Technical Skills & Proficiency</h2>
+        <div className="stack-grid">
+          <div className="stack-category">
+            <h3>Languages & Core Development</h3>
+            <p>TypeScript/JavaScript, Dart, Node.js, Flutter</p>
+          </div>
+          <div className="stack-category">
+            <h3>Frontend Frameworks</h3>
+            <p>React, Angular, Astro</p>
+          </div>
+          <div className="stack-category">
+            <h3>Database Management</h3>
+            <p>SQL (Relational), NoSQL (Document-based)</p>
+          </div>
+          <div className="stack-category">
+            <h3>DevOps & Infrastructure</h3>
+            <p>Docker, Nginx, Reverse Proxies</p>
+          </div>
+          <div className="stack-category">
+            <h3>Cloud & Deployment</h3>
+            <p>Firebase, Vercel</p>
+          </div>
+          <div className="stack-category">
+            <h3>Real-time & Version Control</h3>
+            <p>WebSockets, Git, GitHub, CI/CD</p>
           </div>
         </div>
-
-        <button className="counter" onClick={handleCounterClick}>
-          Praises to Odin: {count}
-        </button>
       </section>
 
-      <section id="next-steps">
-        <div id="forge" className="glass-card">
-          <h2>The Forge</h2>
-          <p>Robust systems forged with steel and code.</p>
-
-          <div className="forge-category">
-            <h3>Artifacts</h3>
-            <div className="social-grid">
-              {artifacts.map((name, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  className={`social-link artifact ${
-                    activeArtifact === index ? "struck" : ""
-                  }`}
-                  onMouseEnter={() => strikeForge(index)}
-                >
-                  {name}
-                </a>
-              ))}
-            </div>
-          </div>
-
-          <div className="forge-category">
-            <h3>Ancient Runes</h3>
-            <div className="social-grid">
-              <span className="tech-pill">React</span>
-              <span className="tech-pill">Node.js</span>
-              <span className="tech-pill">TypeScript</span>
-              <span className="tech-pill">UDP/WebSockets</span>
-            </div>
-          </div>
-        </div>
-
-        <div id="social" className="glass-card">
-          <h2>Great Halls</h2>
-          <p>Find me where the mead and logic flow.</p>
-          <div className="social-grid">
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="social-link"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/"
-              target="_blank"
-              rel="noreferrer"
-              className="social-link"
-            >
-              LinkedIn
-            </a>
-          </div>
+      <section className="links-section">
+        <h2>Contact</h2>
+        <div className="social-links">
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="social-btn"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="social-btn"
+          >
+            LinkedIn
+          </a>
         </div>
       </section>
     </div>
