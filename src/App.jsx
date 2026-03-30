@@ -45,7 +45,7 @@ function App() {
         <h2>Contact</h2>
         <div className="social-links">
           <a
-            href="https://github.com/"
+            href="https://github.com/ArielCedillo225"
             target="_blank"
             rel="noreferrer"
             className="social-btn"
@@ -53,7 +53,7 @@ function App() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/"
+            href="https://www.linkedin.com/in/ariel-cedillo-5ab010373/"
             target="_blank"
             rel="noreferrer"
             className="social-btn"
